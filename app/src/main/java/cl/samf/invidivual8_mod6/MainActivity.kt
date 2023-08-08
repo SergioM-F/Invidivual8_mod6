@@ -2,6 +2,8 @@ package cl.samf.invidivual8_mod6
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import cl.samf.individual5_mod6.R
+
 /*
 [] 2 pantallas: listado y detalle
 [x] Permiso Internet
