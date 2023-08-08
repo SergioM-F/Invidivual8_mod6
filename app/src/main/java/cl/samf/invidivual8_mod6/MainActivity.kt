@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 /*
 [] 2 pantallas: listado y detalle
-[] Permiso Internet
-[] dependencias: viewBinding, coil, room, retrofit, navigation, viewmodel
+[x] Permiso Internet
+[x] dependencias: viewBinding, coil, room, retrofit, navigation, viewmodel
 [] Listado:
     [] RecyclerView + ViewHolder + Adapter
 [] Detalle:
