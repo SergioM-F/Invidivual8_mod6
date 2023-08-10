@@ -6,7 +6,7 @@ import retrofit2.create
 
 class PerritoRetrofit {
     companion object {
-        private const val URL_BASE ="https://dog.ceo/api"
+        private const val URL_BASE ="https://dog.ceo/api/"
 
         fun getRetrofitRaza(): RazaApi {
             val mRetrofit = Retrofit.Builder()

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import cl.samf.individual5_mod6.R
 
+
 /*
 [] 2 pantallas: listado y detalle
 [x] Permiso Internet
@@ -12,15 +13,15 @@ import cl.samf.individual5_mod6.R
     [] RecyclerView + ViewHolder + Adapter
 [] Detalle:
     [] Recyclerview + ViewHolder + Adapter
-[] repositorio
-[] Remoto
-    [] dataClass
-    [] API (Interface)
-    [] RetroFit
-[] Local
-    [] Database
-    [] Entity
-    [] DAO
+[x] repositorio
+[x] Remoto
+    [x] dataClass
+    [x] API (Interface)
+    [x] RetroFit
+[x] Local
+    [x] Database
+    [x] Entity
+    [x] DAO
 */
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
