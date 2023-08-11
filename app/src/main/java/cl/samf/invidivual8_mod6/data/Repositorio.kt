@@ -18,8 +18,8 @@ class Repositorio(private val razaApi: RazaApi, private val razaDao: RazaDao) {
         if (response.isSuccessful) {
             val message = response.body()!!.message //solo sacando la parte del message, sin datos
             val keys = message.keys
-            keys.forEach {
-                val razaEntity = RazaEntity(it)
+            keys.forEach {raza ->
+                val razaEntity = raza.toRazaEntity()
                 razaDao.insertRaza(razaEntity)
             }
 
@@ -30,8 +30,8 @@ class Repositorio(private val razaApi: RazaApi, private val razaDao: RazaDao) {
     suspend fun obtenerDetalleRaza(id: String){
         val response = razaApi.getDetallePerro(id)
         if(response.isSuccessful){
-            response.body()!!.message.forEach{
-                val detalleRazaEntity = DetalleRazaEntity(id,it)
+            response.body()!!.message.forEach{url ->
+                val detalleRazaEntity = url.toEntity(id)
                 razaDao.insertDetallePerro(detalleRazaEntity)
             }
 
