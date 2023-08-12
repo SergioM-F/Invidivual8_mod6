@@ -11,6 +11,9 @@ interface RazaDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertRaza (razaEntity: RazaEntity)
 
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertRaza (razaEntity: List<RazaEntity>)
+
     @Query("select * from tabla_raza order by raza ASC")
     fun getRazas() : LiveData<List<RazaEntity>>
 
